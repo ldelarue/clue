@@ -1,0 +1,42 @@
+---
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+    - 'docs/**'
+    - '.github/workflows/deploy-gh-pages.yml'
+
+permissions:
+  contents: write
+  deployments: write
+  pages: write
+
+jobs:
+  deploy-mkdocs:
+    name: Deploy mkdocs
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      deployments: write
+      pages: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        
+      - uses: jdx/mise-action@v2
+
+      - name: Install Python dependencies
+        shell: bash
+        run: |
+          uv sync --group docs
+
+      - name: Build the site
+        shell: bash
+        run: |
+          uv run mkdocs gh-deploy --force
