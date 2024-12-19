@@ -16,3 +16,7 @@ dev = [
     "pyyaml>=6.0.2",
     "types-pyyaml>=6.0.12.20240917",
 ]
+docs = [
+    "mkdocs-material>=9.5.49",
+    "mkdocs>=1.6.1",
+]
