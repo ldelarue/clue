@@ -71,7 +71,7 @@ docker run clue:local
 Or alternatively using `make`:
 
 ```bash
-make docker-image
+make image
 ```
 
 ### CLI mode
