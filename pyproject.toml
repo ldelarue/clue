@@ -6,12 +6,15 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115.6",
+    "pydantic-settings>=2.7.1",
     "uvicorn>=0.32.1",
 ]
 
 [dependency-groups]
 dev = [
     "mypy>=1.13.0",
+    "openapi-generator-cli>=7.10.0.post0",
+    "openapi-python-client>=0.23.0",
     "pytest>=8.3.4",
     "pyyaml>=6.0.2",
     "types-pyyaml>=6.0.12.20240917",

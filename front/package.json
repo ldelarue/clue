@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "htmx.org": "^2.0.4",
+    "install": "^0.13.0",
+    "npm": "^11.0.0",
+    "simpledotcss": "^2.3.3"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "vite": "^6.0.7"
+  }
+}

@@ -100,7 +100,7 @@ This project use [`mkdocs`](https://www.mkdocs.org/) for its documentation.
 uvx mkdocs serve
 ```
 
-Static files are generated in `/site` folder using the following command.
+Static files are generated in `/docs-dist` folder using the following command.
 
 ```bash
 uvx mkdocs build

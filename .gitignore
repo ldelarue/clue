@@ -177,6 +177,7 @@ pyrightconfig.json
 
 # Mkdocs
 site/
+docs-dist/
 
 # OpenAPI
 openapi/
@@ -188,3 +189,7 @@ uv.lock
 # Misc
 requirements.txt
 sbx/
+
+# Node
+node_modules/
+package-lock.json
