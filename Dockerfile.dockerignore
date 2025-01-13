@@ -1,0 +1,11 @@
+.github
+.venv
+docs
+front
+scripts
+.git
+.gitignore
+Makefile
+*.md
+*.yaml
+*.yml
