@@ -183,13 +183,9 @@ docs-dist/
 openapi/
 openapi.yaml
 
-# uv
-uv.lock
-
 # Misc
 requirements.txt
 sbx/
 
 # Node
 node_modules/
-package-lock.json
