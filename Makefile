@@ -2,8 +2,8 @@ SHELL := /bin/bash
 .DEFAULT_GOAL := help
 
 .PHONY: front
-front: ## Install the front end libraries.
-	npm --prefix ./front install
+frontend: ## Install the frontend libraries.
+	npm --prefix ./front install && npm --prefix ./front run build
 
 .PHONY: image
 image: ## Build the docker image locally.

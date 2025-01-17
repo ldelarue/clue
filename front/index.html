@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Simple HTML Page</title>
   <meta name="htmx-config" content='{"selfRequestsOnly":false}'>
-  <script defer src="index.js" type="module"></script>
+  <script defer src="src/index.js" type="module"></script>
 </head>
 <body>
   <h1>Welcome to My Simple HTML Page</h1>
   <p>This is a paragraph of text on my simple HTML page.</p>
-  <button hx-get="http://localhost:8080/"
+  <button hx-get="%VITE_API_URL%"
     hx-target="#api-response">
     Get data from FastAPI
   </button>
