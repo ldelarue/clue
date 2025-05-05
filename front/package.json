@@ -4,7 +4,7 @@
   "type": "module",
   "dependencies": {
     "htmx.org": "^2.0.4",
-    "simpledotcss": "^2.3.3"
+    "simpledotcss": "^2.3.6"
   },
   "devDependencies": {
     "vite": "^6.0.11"
