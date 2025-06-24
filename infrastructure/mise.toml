@@ -1,0 +1,7 @@
+[tools]
+terraform = "1.12.1"
+tflint = "0.58.0"
+
+[tasks.format]
+run = "terraform fmt -recursive"
+description = "Format Terraform files recursively"
