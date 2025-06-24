@@ -7,7 +7,7 @@ frontend: ## Install the frontend libraries.
 
 .PHONY: image
 image: ## Build the docker image locally.
-	docker build -t 'clue:local' .
+	docker build -t 'clue:local' backend
 
 .ONESHELL:
 .PHONY: openapi-schema
@@ -23,12 +23,6 @@ openapi-client-go: openapi-schema ## Generate the go client from the openapi spe
 		-g go \
 		-o /local/openapi/go
 
-.PHONY: openapi-client-ts
-openapi-client-ts: openapi-schema ## Generate the typescript client from the openapi spec.
-	npx @hey-api/openapi-ts \
-		-c @hey-api/client-fetch \
-		-i openapi.yaml \
-		-o ts \
 
 .PHONY: openapi-client-python
 openapi-client-python: openapi-schema ## Generate the python client from the openapi spec.
